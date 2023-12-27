@@ -1,0 +1,186 @@
+:root {
+    /* Colors */
+    --black: #09090c;
+    --grey: #a4b2bc;
+    --white: #fff;
+    --background: rgba(137, 171, 245, 0.37);
+  }
+  
+  body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    position: relative;
+    
+    
+  }
+  
+  .button {
+    background-color: var(--black);
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 0.5rem 0 0 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  }
+  
+  .button.active::before,
+  .button.active::after {
+    content: "";
+    background-color: var(--white);
+    height: 2px;
+    width: 1rem;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  
+  .button.active::before {
+    top: 1.5rem;
+    transform: rotate(135deg);
+  }
+  
+  .button.active::after {
+    top: 1.2rem;
+    transform: rotate(-135deg);
+  }
+  
+  .sidebar-container {
+    background-color: var(--black);
+    width: 3.5rem;
+    height: 80%; /* Use 100vh to cover the entire viewport height */
+    position: fixed; /* Fixed positioning to keep it in view */
+    top: 10%;
+    left: 0;
+    border-radius: 0 30px 30px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1; /* Ensure it's on top of other content */
+  }
+
+.logo {
+  width: 2rem;
+  color: var(--white);
+}
+
+.slick-bar {
+  
+  color: var(--white);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--black);
+  padding: 2rem 0;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  
+  transition: all 0.5s ease;
+  border-radius: 0 30px 30px 0;
+}
+
+.profile {
+  
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.item {
+    text-decoration: none;
+    color: var(--white);
+    width: 100%;
+    padding: 1rem 0;
+    cursor: pointer;
+    display: flex;
+    
+    
+    padding-left: 1rem;
+  }
+  
+  .item:hover {
+    border-right: 4px solid var(--white);
+  }
+  
+  .item svg {
+    width: 1.9rem;
+    height: auto;
+    filter: invert(92%) sepia(4%) saturate(1033%) hue-rotate(169deg)
+      brightness(78%) contrast(85%);
+    transition: all 0.3s ease;
+  }
+  .item a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .textbar {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    width: 0;
+    overflow: hidden;
+    margin-left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .textbar.active {
+    width: 100%;
+    
+    display: flex;
+    
+    justify-content: center;
+  }
+  
+  .textbar.hide {
+    display: none;
+    transition: all 0.3s ease;
+  }
+  
+  
+
+.details {
+  
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name h4 {
+  display: inline-block;
+}
+
+.name a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.name a:hover {
+  text-decoration: underline;
+}

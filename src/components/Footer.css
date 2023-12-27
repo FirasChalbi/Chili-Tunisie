@@ -1,0 +1,31 @@
+  footer {
+    background-color: #33292F;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  
+  .sm-handle {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: right;
+  }
+  
+  .sm-button {
+    margin: 0px 10px 0px;
+    
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    filter: invert(1);
+    transition: 3.3s all;
+  }
+  
+  .sm-button:hover {
+    background: #E42217;
+  }
+
+  
