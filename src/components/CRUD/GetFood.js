@@ -56,7 +56,7 @@ const GetFood = () => {
           uploadedImages.map((file, index) => {
             const associatedFood = foods.find(food => food._id === file._id);
 
-            // Only render if associated food is found in the state
+            
             if (associatedFood) {
               return (
                 <div className='food-item2' key={index}>

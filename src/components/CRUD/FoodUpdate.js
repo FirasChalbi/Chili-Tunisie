@@ -54,7 +54,7 @@ const FoodUpdate = ({ fetchFoods, onNavigate }) => {
       formData.append('category', updatedFood.category);
       formData.append('description', updatedFood.description);
 
-      // Check if a new file is selected
+      
       if (updatedFood.file) {
         formData.append('avatar', updatedFood.file);
       }
@@ -66,7 +66,7 @@ const FoodUpdate = ({ fetchFoods, onNavigate }) => {
 
       fetchFoods();
 
-      // Call the provided callback for navigation
+      
       onNavigate('/admin');
     } catch (error) {
       console.error('Error updating food:', error);

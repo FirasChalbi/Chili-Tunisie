@@ -1,4 +1,4 @@
-// Welcome.js
+
 import React, { useState } from 'react';
 import MenuButton from './MenuButton';
 import './welcome.css';

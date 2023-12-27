@@ -17,7 +17,7 @@ const Admin = () => {
 
       const data = await response.json();
 
-      // Check if the upload was successful
+      
       if (response.ok) {
         setUploadMessage(data.message);
       } else {

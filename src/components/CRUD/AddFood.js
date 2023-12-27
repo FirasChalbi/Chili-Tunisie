@@ -23,14 +23,14 @@ const AddFood = ({ onUpload }) => {
     formData.append('category', category);
     formData.append('description', description);
 
-    // Pass the form data to the parent component
+    // Pass the form data
     onUpload(formData);
 
     try {
       // Simulate an asynchronous upload process
       await simulateUpload(formData);
 
-      // Set upload success flag and clear input fields
+      
       setUploadSuccess(true);
       setName('');
       setPrice('');
@@ -38,19 +38,18 @@ const AddFood = ({ onUpload }) => {
       setDescription('');
     } catch (error) {
       console.error('Upload failed:', error);
-      // Handle error if necessary
+      
     }
   };
 
   const simulateUpload = (formData) => {
-    // Simulate an asynchronous upload process (replace with your actual upload logic)
+    
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        // Resolve to simulate a successful upload
+        
         resolve();
-        // You can reject to simulate a failed upload
-        // reject(new Error('Upload failed'));
-      }, 2000); // Simulating a 2-second upload process
+        
+      }, 2000); 
     });
   };
 

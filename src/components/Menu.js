@@ -20,14 +20,14 @@ const Menu = () => {
     fetchMenuData();
   }, []);
 
-  // Function to handle click on a food item
+  
   const handleFoodItemClick = (foodItem) => {
-    // Add your logic here to handle the click on the food item
+   
     console.log(`Clicked on ${foodItem.name}`);
-    // You can navigate to a new page, show a modal, etc.
+   
   };
 
-  // Organize data by category
+  
   const organizedMenuData = menuData.reduce((acc, foodItem) => {
     const category = foodItem.category;
 

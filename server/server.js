@@ -110,7 +110,7 @@ app.delete('/foods/:id', async (req, res) => {
       return res.status(404).json({ error: 'Food not found' });
     }
 
-    // You may want to delete the associated image file here
+    
 
     res.json({ message: 'Food deleted successfully' });
   } catch (error) {

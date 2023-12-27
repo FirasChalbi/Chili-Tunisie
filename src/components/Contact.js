@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './contact.css'; // Import your CSS file for styling
+import './contact.css';
 import chili from '../images/chili.png';
 
 const Contact = () => {
